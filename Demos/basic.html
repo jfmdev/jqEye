@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jqEye - Basic demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="jqeyes-1.0.min.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                jQuery("#Pupil").jqEye();
+            });
+        </script>
+    </head>
+    <body>
+        <div style="width:50px; height:50px; position:relative; border:1px solid gray; border-radius:25px;">
+            <div id="Pupil" style="width:10px; height:10px; left:20px; top:20px; border-radius:5px; background-color:blue; position:relative;"></div>
+        </div>
+    </body>
+</html>

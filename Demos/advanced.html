@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jqEye - Advanced demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body {
+                padding-top: 50px;
+                text-align: center;
+            }
+            
+            div.eyes {
+                width: 160px;
+                height: 60px;
+                margin: 0 auto;
+                position: relative;
+                margin-bottom: 40px;
+            }
+            
+            div.left_eye,
+            div.right_eye {
+                width: 60px;
+                height: 60px;
+                top: 0;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-position: center center;                  
+            }
+            
+            div.left_eye {
+                left: 0;
+            }
+            
+            div.right_eye {
+                right: 0;
+            }
+            
+            div.eyes div.pupil {
+                left: 17px;
+                top: 17px;
+                width: 25px;
+                height: 25px;
+                position: relative;
+                background-image: url("pupil.png");
+                background-repeat: no-repeat;
+                background-position: center center;         
+            }
+            
+            #circular div.left_eye,
+            #circular div.right_eye {
+                background-image: url("circle.png");
+            }
+            
+            #ellipse div.left_eye,
+            #ellipse div.right_eye {
+                background-image: url("ellipse.png");
+            }
+            
+            #rectangular div.left_eye,
+            #rectangular div.right_eye {
+                background-image: url("square.png");
+            }
+            
+            #rounded_rectangular div.left_eye,
+            #rounded_rectangular div.right_eye {
+                background-image: url("rounded_square.png");
+            }
+        </style>
+        <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="jqeyes-1.0.min.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                jQuery("#circular div.pupil").jqEye({shape: "circle", radius:12});
+                jQuery("#ellipse div.pupil").jqEye({shape: "ellipse", width:34, height:14});
+                jQuery("#rectangular div.pupil").jqEye({shape: "rectangle", width:25, height:25});
+                jQuery("#rounded_rectangular div.pupil").jqEye({shape: "rounded rectangle", width:25, height:25, radius:5});
+            });
+        </script>
+    </head>
+    <body>
+        <div id="circular" class="eyes">
+            <div class="left_eye">
+                <div class="pupil"></div>
+            </div>
+            <div class="right_eye">
+                <div class="pupil"></div>
+            </div>
+        </div>
+        
+        <div id="ellipse" class="eyes">
+            <div class="left_eye">
+                <div class="pupil"></div>
+            </div>
+            <div class="right_eye">
+                <div class="pupil"></div>
+            </div>
+        </div>
+        
+        <div id="rectangular" class="eyes">
+            <div class="left_eye">
+                <div class="pupil"></div>
+            </div>
+            <div class="right_eye">
+                <div class="pupil"></div>
+            </div>
+        </div>
+        
+        <div id="rounded_rectangular" class="eyes">
+            <div class="left_eye">
+                <div class="pupil"></div>
+            </div>
+            <div class="right_eye">
+                <div class="pupil"></div>
+            </div>
+        </div>
+    </body>
+</html>
