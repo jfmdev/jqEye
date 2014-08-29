@@ -8,9 +8,9 @@ Defines a behaviour in which an object acts moves, within the boundaries of an i
 Demos
 -----
 
-Basic: http://jsfiddle.net/jfmdev/L43zcmq4/
+Basic: http://jsfiddle.net/jfmdev/L43zcmq4/1/
 
-Advanced: http://jsfiddle.net/jfmdev/78ktpaqv/
+Advanced: http://jsfiddle.net/jfmdev/78ktpaqv/3/
 
 How to use
 ----------
