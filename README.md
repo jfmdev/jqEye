@@ -3,7 +3,7 @@ jqEye
 
 _Make eyes that follow the mouse_
 
-Defines a behaviour in which an object acts moves, within the boundaries of an imaginary eye, in order to follow the mouse.
+A JavaScript library that allows to define a behaviour in which a HTML element moves, within the boundaries of an imaginary eye, in order to follow the mouse.
 
 Demos
 -----
