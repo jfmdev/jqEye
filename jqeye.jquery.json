@@ -1,5 +1,5 @@
 {
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"name": "jqeye",
 	"title": "jqEye",
 	"description": "jQuery plugin for define a behaviour in which a HTML element moves, within the boundaries of an imaginary eye, in order to follow the mouse.",

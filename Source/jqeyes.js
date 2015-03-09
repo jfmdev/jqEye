@@ -16,7 +16,7 @@
 /**
  * Definition of the jQuery plugin "jqEye", which allows to create eyes that follows the mouse's position.
  * 
- * @version 1.0
+ * @version 1.02
  * @author Jose F. Maldonado
  */
 (function( $ ) {
@@ -67,8 +67,8 @@
                 var mouse_y = e.clientY;
 
                 // Transform the mouse's position to coordinates relatives to the eye's center.
-                var pos_x = mouse_x - abs_center_x;
-                var pos_y = mouse_y - abs_center_y;
+                var pos_x = mouse_x - abs_center_x + $(window).scrollLeft();
+                var pos_y = mouse_y - abs_center_y + $(window).scrollTop();
 
                 // According to the shape of the eye, verify if the mouse is inside or outside the eye.
                 // If the mouse is outside the eye, calculate the position of the pupil as the intersection
@@ -170,5 +170,3 @@
         }
     };
 }( jQuery ));
-
-
