@@ -8,9 +8,9 @@ A jQuery plugin that allows to define a behaviour in which a HTML element moves,
 Demos
 -----
 
-Basic: http://jsfiddle.net/jfmdev/L43zcmq4/1/
+Basic: http://jsfiddle.net/L43zcmq4/4/
 
-Advanced: http://jsfiddle.net/jfmdev/78ktpaqv/3/
+Advanced: http://jsfiddle.net/78ktpaqv/11/
 
 How to use
 ----------
@@ -19,7 +19,7 @@ How to use
 
 ``` html
     <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="jqeyes-1.0.js"></script>
+    <script type="text/javascript" src="jqeyes.js"></script>
 ```
 
 **Step 2:** Define, in the body of the HTML document, the element which is going to act as the pupil. 
