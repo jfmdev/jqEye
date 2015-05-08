@@ -1,0 +1,21 @@
+{
+  "name": "https://github.com/jfmdev/jqEye.git",
+  "version": "1.0.2",
+  "description": "A jQuery library for make eyes that follow the mouse",
+  "main": "Source/jqeyes.min.js",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "eyes",
+    "follow",
+    "mouse"
+  ],  
+  "authors": [
+    "JFMDev"
+  ],
+  "dependencies": {
+    "jquery": "~1.5",
+  }
+  "license": "LGPLv3",
+  "homepage": "https://github.com/jfmdev/jqEye"
+}
