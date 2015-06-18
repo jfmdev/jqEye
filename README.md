@@ -15,11 +15,11 @@ Advanced: http://jsfiddle.net/78ktpaqv/11/
 How to use
 ----------
 
-**Step 1:** Add references to the files of _jQuery_ and _jqEye_ in the header section of the HTML document.
+**Step 1:** Add references to the files of [jQuery](https://jquery.com) and [jqEye](/Source/) in the header section of the HTML document.
 
 ``` html
     <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="jqeyes.js"></script>
+    <script type="text/javascript" src="jqeye.js"></script>
 ```
 
 **Step 2:** Define, in the body of the HTML document, the element which is going to act as the pupil. 
@@ -53,7 +53,6 @@ For example:
         jQuery("#Pupil_2").jqEye({shape: "ellipse", width:40, height:20});
         jQuery("#Pupil_3").jqEye({shape: "rectangle", width:40, height:20});
         jQuery("#Pupil_4").jqEye({shape: "rounded rectangle", width:40, height:40, radius:10});
-
     });
 ```
 
