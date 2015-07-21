@@ -1,0 +1,28 @@
+{
+  "name": "jq-eye",
+  "version": "1.0.2",
+  "description": "A jQuery library for make eyes that follow the mouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jfmdev/jqEye.git"
+  },
+  "keywords": [
+    "jquery",
+    "plugin",
+    "jquery-plugin",
+    "eyes",
+    "eye",
+    "follow",
+    "mouse"
+  ],
+  "author": "JFMDev",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jfmdev/jqEye/issues"
+  },
+  "homepage": "https://github.com/jfmdev/jqEye"
+}
