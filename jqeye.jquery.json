@@ -16,8 +16,8 @@
 	},
 	"licenses": [
 		{
-			"type": "LGPL3",
-			"url": "http://www.gnu.org/licenses/lgpl.html"
+			"type": "MPL-2.0",
+			"url": "http://mozilla.org/MPL/2.0/"
 		}
 	],
 	"homepage": "https://github.com/jfmdev/jqEye",
