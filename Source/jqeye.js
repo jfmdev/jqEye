@@ -6,7 +6,7 @@
 /**
  * Definition of the jQuery plugin "jqEye", which allows to create eyes that follows the mouse's position.
  * 
- * @version 1.02
+ * @version 1.0.3
  * @author Jose F. Maldonado
  */
 (function( $ ) {
@@ -41,17 +41,26 @@
         return this.each(function() {
             // Get the pupil.
             var pupil = $(this);
-            
-            // Get the eye center's position, in relative (to the pupil's parent) and absolute coordinates.
-            // Note that the methods 'position()' and 'offset()' returns the coordinates of the upper left corner
-            // (so in order to get the center's position, the half of the pupil's widht and height must be added).
-            var center_x = $(this).position().left + $(this).width()/2;
-            var center_y = $(this).position().top + $(this).height()/2;
-            var abs_center_x = $(this).offset().left + $(this).width()/2;
-            var abs_center_y = $(this).offset().top + $(this).height()/2;
-            
+
+            // Declare variables.
+            var center_x = null;
+            var center_y = null;
+            var abs_center_x = null;
+            var abs_center_y = null;
+
             // Define the behaviour for when the mouse is moved.
             $(document).mousemove(function(e) {
+                // Initialize initial positions (if need).
+                if(center_x === null || center_y === null || abs_center_x === null || abs_center_y === null) {
+                    // Get the eye center's position, in relative (to the pupil's parent) and absolute coordinates.
+                    // Note that the methods 'position()' and 'offset()' returns the coordinates of the upper left corner
+                    // (so in order to get the center's position, the half of the pupil's widht and height must be added).
+                    center_x = pupil.position().left + pupil.width()/2;
+                    center_y = pupil.position().top + pupil.height()/2;
+                    abs_center_x = pupil.offset().left + pupil.width()/2;
+                    abs_center_y = pupil.offset().top + pupil.height()/2;
+                }
+                
                 // Get mouse's position (in absolute coordinates).
                 var mouse_x = e.clientX;
                 var mouse_y = e.clientY;
@@ -96,7 +105,7 @@
                 });
             }); 
         });
-		
+        
         // --- Private functions --- //
         function rectangle_position(x, y, width, height) {
             // Rectangle: -w < x < w ; -h < y < h
